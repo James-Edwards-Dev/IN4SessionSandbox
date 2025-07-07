@@ -15,6 +15,9 @@ public:
 	// Sets default values for this actor's properties
 	ATestActor();
 
+	UPROPERTY(EditAnywhere, Category = "Test Values")
+	int32 Value;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
